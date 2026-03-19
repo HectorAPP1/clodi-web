@@ -1,0 +1,16 @@
+{
+  "name": "Clodi — Software HSE",
+  "short_name": "Clodi",
+  "description": "Plataforma HSE para gestión de riesgos, EPP y auditorías.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5840e3",
+  "icons": [
+    {
+      "src": "assets/clodi_ISOTIPO.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

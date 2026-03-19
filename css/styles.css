@@ -1,0 +1,188 @@
+/* ========================================
+   Clodi — Estilos personalizados
+   ======================================== */
+
+/* --- Fuentes y base --- */
+body { font-family: 'Inter', sans-serif; }
+
+/* --- Navegación --- */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* --- Hero --- */
+.hero-bg {
+    background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(88, 64, 227, 0.06), transparent 70%),
+                radial-gradient(ellipse 60% 50% at 10% 80%, rgba(20, 184, 166, 0.04), transparent 60%);
+}
+
+/* --- Gradiente de texto animado --- */
+@keyframes gradient-shift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.text-gradient {
+    background: linear-gradient(120deg, #5840e3, #3b82f6, #14b8a6, #5840e3);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 8s ease infinite;
+}
+
+/* --- Botón primario --- */
+.btn-primary {
+    background: #5840e3;
+    transition: all 0.2s ease;
+}
+.btn-primary:hover {
+    background: #4731c9;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 30px rgba(88, 64, 227, 0.3);
+}
+.btn-primary:active { transform: scale(0.97); }
+
+.btn-outline {
+    border: 1.5px solid #cbd5e1;
+    transition: all 0.2s ease;
+}
+.btn-outline:hover {
+    border-color: #5840e3;
+    color: #5840e3;
+}
+
+/* --- Mascota flotante + blend (elimina fondo gris Gemini) --- */
+@keyframes mascot-float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-14px); }
+}
+.mascot-float { animation: mascot-float 5s ease-in-out infinite; }
+
+.mascot-img {
+    mix-blend-mode: multiply;
+    filter: brightness(1.06) contrast(1.02) saturate(1.05);
+}
+
+/* --- Menú móvil --- */
+.mobile-menu-panel {
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.25s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.mobile-menu-panel.open {
+    max-height: 600px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* --- Módulos app --- */
+.module-tab {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    color: rgb(148 163 184); /* slate-400 */
+}
+.module-tab.active {
+    background: rgba(88, 64, 227, 0.15);
+    border-color: #5840e3;
+    color: #fff;
+}
+.module-tab:not(.active):hover {
+    background: rgba(255,255,255,0.06);
+}
+.module-panel  { display: none; }
+.module-panel.active  { display: block; }
+.module-mockup { display: none; }
+.module-mockup.active { display: block; }
+
+/* --- Comparativa --- */
+.compare-check,
+.compare-cross,
+.compare-warn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+.compare-check { background: rgba(20, 184, 166, 0.12); color: #14b8a6; }
+.compare-cross  { background: rgba(239, 68, 68, 0.1);   color: #ef4444; }
+.compare-warn   { background: rgba(245, 158, 11, 0.1);  color: #f59e0b; }
+
+/* --- Cards de features --- */
+.feature-card {
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.feature-card:hover {
+    border-color: #c4b5fd;
+    box-shadow: 0 12px 40px rgba(88, 64, 227, 0.08);
+    transform: translateY(-4px);
+}
+
+/* --- Borde acento izquierdo --- */
+.accent-purple { border-left: 3px solid #5840e3; }
+.accent-teal   { border-left: 3px solid #14b8a6; }
+.accent-amber  { border-left: 3px solid #f59e0b; }
+
+/* --- Tabla comparación --- */
+.compare-row:hover { background: #f8fafc; }
+
+/* --- Estadísticas --- */
+.stat-number {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: #5840e3;
+}
+
+/* --- Dot grid pattern --- */
+.dot-pattern {
+    background-image: radial-gradient(#5840e3 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+/* --- Shimmer pulse en badge --- */
+@keyframes badge-pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.5; }
+}
+.badge-dot { animation: badge-pulse 2s ease-in-out infinite; }
+
+/* --- CTA section --- */
+.cta-section {
+    background: linear-gradient(135deg, #0f0a2e 0%, #1e1057 50%, #0f172a 100%);
+}
+
+/* ==========================================
+   Estilos Brevo Form
+   ========================================== */
+@font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+#sib-container input:-ms-input-placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
+#sib-container input::placeholder         { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
+#sib-container textarea::placeholder      { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
+#sib-container a { text-decoration: underline; color: #2BB2FC; }
