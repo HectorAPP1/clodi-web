@@ -227,7 +227,7 @@
         <div class="px-6 py-6 space-y-1">
 
             <!-- Sección: Navegar -->
-            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3 mb-3">Navegar</p>
+            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3 mb-3" data-i18n="menu.label">Navegar</p>
 
             <a href="#modulos" onclick="closeMobileMenu()"
                 class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-slate-50 transition-colors group">
@@ -235,8 +235,8 @@
                     <span class="material-symbols-outlined text-primary text-base">apps</span>
                 </span>
                 <div>
-                    <p class="text-sm font-semibold text-slate-800">Módulos</p>
-                    <p class="text-xs text-slate-400">EPP, IPER, Inspecciones, IA</p>
+                    <p class="text-sm font-semibold text-slate-800" data-i18n="menu.modules">Módulos</p>
+                    <p class="text-xs text-slate-400" data-i18n="menu.modulesSub">EPP, IPER, Inspecciones, IA</p>
                 </div>
             </a>
 
@@ -246,8 +246,8 @@
                     <span class="material-symbols-outlined text-teal-500 text-base">verified_user</span>
                 </span>
                 <div>
-                    <p class="text-sm font-semibold text-slate-800">Plataforma</p>
-                    <p class="text-xs text-slate-400">DS 44, DS 594, Ley 16.744</p>
+                    <p class="text-sm font-semibold text-slate-800" data-i18n="menu.platform">Plataforma</p>
+                    <p class="text-xs text-slate-400" data-i18n="menu.platformSub">DS 44, DS 594, Ley 16.744</p>
                 </div>
             </a>
 
@@ -257,8 +257,8 @@
                     <span class="material-symbols-outlined text-amber-500 text-base">compare</span>
                 </span>
                 <div>
-                    <p class="text-sm font-semibold text-slate-800">Clodi vs. Manual</p>
-                    <p class="text-xs text-slate-400">Comparativa de gestión HSE</p>
+                    <p class="text-sm font-semibold text-slate-800" data-i18n="menu.compare">Clodi vs. Manual</p>
+                    <p class="text-xs text-slate-400" data-i18n="menu.compareSub">Comparativa de gestión HSE</p>
                 </div>
             </a>
 
@@ -266,19 +266,19 @@
             <div class="pl-11 pt-1 pb-2 space-y-1">
                 <a href="#modulos" onclick="closeMobileMenu(); setTimeout(()=>switchModule('epp'),400)"
                     class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> Control de EPP
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> <span data-i18n="menu.epp">Control de EPP</span>
                 </a>
                 <a href="#modulos" onclick="closeMobileMenu(); setTimeout(()=>switchModule('iper'),400)"
                     class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> Matriz IPER Digital
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> <span data-i18n="menu.iper">Matriz IPER Digital</span>
                 </a>
                 <a href="#modulos" onclick="closeMobileMenu(); setTimeout(()=>switchModule('inspecciones'),400)"
                     class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> Inspecciones Digitales
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> <span data-i18n="menu.inspec">Inspecciones Digitales</span>
                 </a>
                 <a href="#modulos" onclick="closeMobileMenu(); setTimeout(()=>switchModule('ia'),400)"
                     class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> ✨ IA Asistida
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> <span data-i18n="menu.ia">✨ IA Asistida</span>
                 </a>
             </div>
 
@@ -288,13 +288,13 @@
             <a href="https://app.clodi.cl" target="_blank" rel="noopener noreferrer" onclick="closeMobileMenu()"
                 class="flex items-center gap-2 px-3 py-3 rounded-xl hover:bg-slate-50 transition-colors text-sm font-medium text-slate-600">
                 <span class="material-symbols-outlined text-base text-slate-400">login</span>
-                Iniciar sesión
+                <span data-i18n="menu.login">Iniciar sesión</span>
             </a>
 
             <button onclick="closeMobileMenu(); openContactModal()"
                 class="w-full btn-primary text-white text-sm font-bold px-5 py-3 rounded-xl mt-2 flex items-center justify-center gap-2">
                 <span class="material-symbols-outlined text-base">mail</span>
-                Contactar a ventas
+                <span data-i18n="menu.sales">Contactar a ventas</span>
             </button>
         </div>
     </div>
@@ -351,7 +351,7 @@
                     <!-- Social proof -->
                     <div class="mt-10 flex items-center gap-2 text-xs text-slate-400 font-medium">
                         <span class="material-symbols-outlined text-sm text-green-500">verified</span>
-                        Solicita tu demo de forma gratuita &nbsp;·&nbsp; Implementación gradual &nbsp;·&nbsp; Soporte 24/7
+                        <span data-i18n="hero.trust">Solicita tu demo de forma gratuita · Implementación gradual · Soporte 24/7</span>
                     </div>
                 </div>
 
@@ -558,12 +558,12 @@
                 <!-- Header -->
                 <div class="mb-14">
                     <span
-                        class="inline-block text-[10px] font-black uppercase tracking-[0.2em] text-primary/80 mb-4">Plataforma
+                        class="inline-block text-[10px] font-black uppercase tracking-[0.2em] text-primary/80 mb-4" data-i18n="modules.badge">Plataforma
                         Clodi</span>
                     <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-5">
-                        Todo lo que tu operación<br /><span class="text-gradient">HSE necesita.</span>
+                        <span data-i18n="modules.title">Todo lo que tu operación</span><br /><span class="text-gradient" data-i18n="modules.highlight">HSE necesita.</span>
                     </h2>
-                    <p class="text-slate-400 text-lg max-w-xl leading-relaxed">
+                    <p class="text-slate-400 text-lg max-w-xl leading-relaxed" data-i18n="modules.sub">
                         Una sola plataforma. Cuatro módulos clave. Gestión de riesgos integrada con IA asistida.
                     </p>
                 </div>
@@ -572,22 +572,22 @@
                 <div class="flex flex-wrap gap-2 mb-10" id="module-tabs">
                     <button onclick="switchModule('epp')"
                         class="module-tab active px-5 py-2.5 rounded-lg border border-white/10 text-sm font-bold"
-                        data-tab="epp">
+                        data-tab="epp" data-i18n="modules.tabEpp">
                         🦺 EPP
                     </button>
                     <button onclick="switchModule('iper')"
                         class="module-tab px-5 py-2.5 rounded-lg border border-white/10 text-sm font-bold"
-                        data-tab="iper">
+                        data-tab="iper" data-i18n="modules.tabIper">
                         ⚠️ Matriz IPER
                     </button>
                     <button onclick="switchModule('inspecciones')"
                         class="module-tab px-5 py-2.5 rounded-lg border border-white/10 text-sm font-bold"
-                        data-tab="inspecciones">
+                        data-tab="inspecciones" data-i18n="modules.tabInspecciones">
                         🔍 Inspecciones
                     </button>
                     <button onclick="switchModule('ia')"
                         class="module-tab px-5 py-2.5 rounded-lg border border-white/10 text-sm font-bold"
-                        data-tab="ia">
+                        data-tab="ia" data-i18n="modules.tabIa">
                         ✨ IA Asistida
                     </button>
                 </div>
@@ -597,8 +597,8 @@
 
                     <!-- EPP -->
                     <div id="panel-epp" class="module-panel active">
-                        <h3 class="text-2xl font-black text-white mb-4">Control de EPP</h3>
-                        <p class="text-slate-400 leading-relaxed mb-6">
+                        <h3 class="text-2xl font-black text-white mb-4" data-i18n="modules.eppTitle">Control de EPP</h3>
+                        <p class="text-slate-400 leading-relaxed mb-6" data-i18n="modules.eppSub">
                             Gestiona la entrega, vida útil y vencimiento de cada equipo de protección por trabajador y
                             cargo. Vincula el EPP directamente con la matriz de riesgos del puesto.
                         </p>
@@ -606,30 +606,30 @@
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Registro de entrega con firma digital del trabajador
+                                <span data-i18n="modules.eppLi1">Registro de entrega con firma digital del trabajador</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Alertas automáticas de vencimiento y reposición
+                                <span data-i18n="modules.eppLi2">Alertas automáticas de vencimiento y reposición</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Cumplimiento EPP por turno y faena en tiempo real
+                                <span data-i18n="modules.eppLi3">Cumplimiento EPP por turno y faena en tiempo real</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Evidencia fotográfica adjunta al registro
+                                <span data-i18n="modules.eppLi4">Evidencia fotográfica adjunta al registro</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- IPER -->
                     <div id="panel-iper" class="module-panel">
-                        <h3 class="text-2xl font-black text-white mb-4">Matriz IPER Digital</h3>
-                        <p class="text-slate-400 leading-relaxed mb-6">
+                        <h3 class="text-2xl font-black text-white mb-4" data-i18n="modules.iperTitle">Matriz IPER Digital</h3>
+                        <p class="text-slate-400 leading-relaxed mb-6" data-i18n="modules.iperSub">
                             Identifica, evalúa y controla los riesgos de tu operación con una matriz IPER configurable.
                             Cuantifica el riesgo residual antes y después de los controles aplicados.
                         </p>
@@ -637,30 +637,30 @@
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Metodología cuantitativa William Fine integrada
+                                <span data-i18n="modules.iperLi1">Metodología cuantitativa William Fine integrada</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Riesgo residual trazable con controles aplicados
+                                <span data-i18n="modules.iperLi2">Riesgo residual trazable con controles aplicados</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Vinculación automática con puestos de trabajo
+                                <span data-i18n="modules.iperLi3">Vinculación automática con puestos de trabajo</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Exportable para fiscalizaciones (D.S. 44)
+                                <span data-i18n="modules.iperLi4">Exportable para fiscalizaciones (D.S. 44)</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Inspecciones -->
                     <div id="panel-inspecciones" class="module-panel">
-                        <h3 class="text-2xl font-black text-white mb-4">Inspecciones digitales</h3>
-                        <p class="text-slate-400 leading-relaxed mb-6">
+                        <h3 class="text-2xl font-black text-white mb-4" data-i18n="modules.inspecTitle">Inspecciones digitales</h3>
+                        <p class="text-slate-400 leading-relaxed mb-6" data-i18n="modules.inspecSub">
                             Realiza inspecciones de seguridad en terreno desde el celular. Captura evidencia
                             fotográfica, registra hallazgos y genera acciones correctivas en segundos.
                         </p>
@@ -668,32 +668,32 @@
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Checklists configurables por tipo de inspección
+                                <span data-i18n="modules.inspecLi1">Checklists configurables por tipo de inspección</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Fotos y videos como evidencia inmutable
+                                <span data-i18n="modules.inspecLi2">Fotos y videos como evidencia inmutable</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Cierre de hallazgos con trazabilidad completa
+                                <span data-i18n="modules.inspecLi3">Cierre de hallazgos con trazabilidad completa</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Reportes automáticos listos para fiscalización
+                                <span data-i18n="modules.inspecLi4">Reportes automáticos listos para fiscalización</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- IA -->
                     <div id="panel-ia" class="module-panel">
-                        <h3 class="text-2xl font-black text-white mb-4">IA Asistida <span
-                                class="text-xs font-bold text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full ml-1 align-middle">Próximamente</span>
+                        <h3 class="text-2xl font-black text-white mb-4"><span data-i18n="modules.iaTitle">IA Asistida</span> <span
+                                class="text-xs font-bold text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full ml-1 align-middle" data-i18n="modules.iaBadge">Próximamente</span>
                         </h3>
-                        <p class="text-slate-400 leading-relaxed mb-6">
+                        <p class="text-slate-400 leading-relaxed mb-6" data-i18n="modules.iaSub">
                             Nuestro motor de IA analiza patrones históricos de tu operación para predecir incidentes
                             antes de que ocurran y sugerir controles preventivos automáticamente.
                         </p>
@@ -701,22 +701,22 @@
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Scoring de riesgo actualizado en tiempo real
+                                <span data-i18n="modules.iaLi1">Scoring de riesgo actualizado en tiempo real</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Detección de anomalías en comportamiento operativo
+                                <span data-i18n="modules.iaLi2">Detección de anomalías en comportamiento operativo</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Recomendaciones de EPP por perfil de riesgo
+                                <span data-i18n="modules.iaLi3">Recomendaciones de EPP por perfil de riesgo</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-slate-300">
                                 <span
                                     class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
-                                Generación automática de reportes con lenguaje natural
+                                <span data-i18n="modules.iaLi4">Generación automática de reportes con lenguaje natural</span>
                             </li>
                         </ul>
                     </div>
@@ -982,10 +982,10 @@
             <div class="max-w-5xl mx-auto relative z-20">
                 <!-- Header -->
                 <div class="text-center mb-14">
-                    <h2 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-5">
+                    <h2 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-5" data-i18n="compare.title">
                         Clodi vs. Gestión Manual
                     </h2>
-                    <p class="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p class="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed" data-i18n="compare.sub">
                         Descubre por qué la digitalización es el siguiente paso lógico para tu seguridad operacional.
                     </p>
                 </div>
@@ -996,11 +996,11 @@
                     <div class="grid grid-cols-3 bg-slate-50 border-b border-slate-200">
                         <div class="p-5 flex items-end">
                             <span
-                                class="text-xs font-black uppercase tracking-[0.18em] text-slate-400">Característica</span>
+                                class="text-xs font-black uppercase tracking-[0.18em] text-slate-400" data-i18n="compare.colFeature">Característica</span>
                         </div>
                         <div class="p-5 text-center border-l border-slate-200">
-                            <span class="block text-sm font-black text-slate-400 mb-0.5">Sin Clodi</span>
-                            <span class="text-[10px] text-slate-400 font-medium">Excel / Papel</span>
+                            <span class="block text-sm font-black text-slate-400 mb-0.5" data-i18n="compare.colManual">Sin Clodi</span>
+                            <span class="text-[10px] text-slate-400 font-medium" data-i18n="compare.colManualSub">Excel / Papel</span>
                         </div>
                         <div class="p-5 text-center border-l border-slate-200 relative bg-primary/3">
                             <div class="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-blue-500">
@@ -1008,7 +1008,7 @@
                             <div class="flex items-center justify-center gap-1.5 mb-0.5">
                                 <img src="assets/clodilogo.svg" alt="Clodi" class="h-4 w-auto" />
                             </div>
-                            <span class="text-[10px] text-primary font-bold">Software Automatizado</span>
+                            <span class="text-[10px] text-primary font-bold" data-i18n="compare.colClodi">Software Automatizado</span>
                         </div>
                     </div>
 
@@ -1017,115 +1017,115 @@
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
                             <div class="p-5 flex items-center"><span
-                                    class="font-medium text-slate-700 text-sm">Evidencia Fotográfica</span></div>
+                                    class="font-medium text-slate-700 text-sm" data-i18n="compare.r1">Evidencia Fotográfica</span></div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100">
                                 <span class="compare-cross">
-                                    <span class="material-symbols-outlined text-sm">close</span> No disponible
+                                    <span class="material-symbols-outlined text-sm">close</span> <span data-i18n="compare.no">No disponible</span>
                                 </span>
                             </div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100 bg-primary/2">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">check</span> Incluido
+                                    <span class="material-symbols-outlined text-sm">check</span> <span data-i18n="compare.si">Incluido</span>
                                 </span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
-                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm">Reportes
+                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm" data-i18n="compare.r2">Reportes
                                     en Tiempo Real</span></div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100">
                                 <span class="compare-cross">
-                                    <span class="material-symbols-outlined text-sm">close</span> No disponible
+                                    <span class="material-symbols-outlined text-sm">close</span> <span data-i18n="compare.no">No disponible</span>
                                 </span>
                             </div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100 bg-primary/2">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">check</span> Incluido
+                                    <span class="material-symbols-outlined text-sm">check</span> <span data-i18n="compare.si">Incluido</span>
                                 </span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
-                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm">Control
+                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm" data-i18n="compare.r3">Control
                                     de EPP</span></div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100">
                                 <span class="compare-warn">
-                                    <span class="material-symbols-outlined text-sm">warning</span> Parcial / Difícil
+                                    <span class="material-symbols-outlined text-sm">warning</span> <span data-i18n="compare.parcial">Parcial / Difícil</span>
                                 </span>
                             </div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100 bg-primary/2">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">check</span> Automatizado
+                                    <span class="material-symbols-outlined text-sm">check</span> <span data-i18n="compare.auto">Automatizado</span>
                                 </span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
-                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm">Alertas
+                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm" data-i18n="compare.r4">Alertas
                                     de Vencimiento</span></div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100">
                                 <span class="compare-cross">
-                                    <span class="material-symbols-outlined text-sm">close</span> No disponible
+                                    <span class="material-symbols-outlined text-sm">close</span> <span data-i18n="compare.no">No disponible</span>
                                 </span>
                             </div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100 bg-primary/2">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">check</span> Incluido
+                                    <span class="material-symbols-outlined text-sm">check</span> <span data-i18n="compare.si">Incluido</span>
                                 </span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
                             <div class="p-5 flex items-center"><span
-                                    class="font-medium text-slate-700 text-sm">Trazabilidad para Fiscalización</span>
+                                    class="font-medium text-slate-700 text-sm" data-i18n="compare.r5">Trazabilidad para Fiscalización</span>
                             </div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100">
                                 <span class="compare-warn">
-                                    <span class="material-symbols-outlined text-sm">warning</span> Lento / Manual
+                                    <span class="material-symbols-outlined text-sm">warning</span> <span data-i18n="compare.lento">Lento / Manual</span>
                                 </span>
                             </div>
                             <div class="p-5 flex justify-center items-center border-l border-slate-100 bg-primary/2">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">check</span> Completa
+                                    <span class="material-symbols-outlined text-sm">check</span> <span data-i18n="compare.completa">Completa</span>
                                 </span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
-                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm">Tiempo
+                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm" data-i18n="compare.r6">Tiempo
                                     de Reportabilidad</span></div>
                             <div
                                 class="p-5 flex flex-col justify-center items-center border-l border-slate-100 gap-1 text-center">
                                 <span class="compare-cross">
-                                    <span class="material-symbols-outlined text-sm">schedule</span> Horas o días
+                                    <span class="material-symbols-outlined text-sm">schedule</span> <span data-i18n="compare.horas">Horas o días</span>
                                 </span>
-                                <span class="text-[10px] text-slate-400">Consolidación manual</span>
+                                <span class="text-[10px] text-slate-400" data-i18n="compare.manual">Consolidación manual</span>
                             </div>
                             <div
                                 class="p-5 flex flex-col justify-center items-center border-l border-slate-100 bg-primary/2 gap-1 text-center">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">bolt</span> Segundos
+                                    <span class="material-symbols-outlined text-sm">bolt</span> <span data-i18n="compare.segundos">Segundos</span>
                                 </span>
-                                <span class="text-[10px] text-primary font-semibold">Reportes automáticos</span>
+                                <span class="text-[10px] text-primary font-semibold" data-i18n="compare.reportesAuto">Reportes automáticos</span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 compare-row transition-colors hover:bg-slate-50/80">
-                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm">Riesgo
+                            <div class="p-5 flex items-center"><span class="font-medium text-slate-700 text-sm" data-i18n="compare.r7">Riesgo
                                     de Multas</span></div>
                             <div
                                 class="p-5 flex flex-col justify-center items-center border-l border-slate-100 gap-1 text-center">
                                 <span class="compare-cross">
-                                    <span class="material-symbols-outlined text-sm">cancel</span> Alto riesgo
+                                    <span class="material-symbols-outlined text-sm">cancel</span> <span data-i18n="compare.altoRiesgo">Alto riesgo</span>
                                 </span>
-                                <span class="text-[10px] text-slate-400">Hasta 60 UTM por infracción</span>
+                                <span class="text-[10px] text-slate-400" data-i18n="compare.utmRisk">Hasta 60 UTM por infracción</span>
                             </div>
                             <div
                                 class="p-5 flex flex-col justify-center items-center border-l border-slate-100 bg-primary/2 gap-1 text-center">
                                 <span class="compare-check">
-                                    <span class="material-symbols-outlined text-sm">shield</span> Mínimo riesgo
+                                    <span class="material-symbols-outlined text-sm">shield</span> <span data-i18n="compare.minimoRiesgo">Mínimo riesgo</span>
                                 </span>
-                                <span class="text-[10px] text-primary font-semibold">Evidencia total ante
+                                <span class="text-[10px] text-primary font-semibold" data-i18n="compare.evidencia">Evidencia total ante
                                     inspecciones</span>
                             </div>
                         </div>
@@ -1133,14 +1133,14 @@
                     </div>
                 </div>
 
-                <p class="text-center text-[11px] text-slate-400 mt-4 italic">Referencia basada en normativa chilena
+                <p class="text-center text-[11px] text-slate-400 mt-4 italic" data-i18n="compare.ref">Referencia basada en normativa chilena
                     (Ley 16.744)</p>
 
                 <!-- CTA dentro de la sección -->
                 <div class="mt-10 text-center">
                     <button onclick="openContactModal()"
                         class="btn-primary text-white font-black px-10 py-4 rounded-xl text-base inline-flex items-center gap-2 shadow-glow">
-                        Digitaliza tu operación ahora
+                        <span data-i18n="compare.cta">Digitaliza tu operación ahora</span>
                         <span class="material-symbols-outlined">rocket_launch</span>
                     </button>
                 </div>
@@ -1395,9 +1395,9 @@
                 <p class="text-xs text-slate-400 uppercase tracking-widest" data-i18n="footer.copy">© 2026 Clodi Inc.
                     Todos los derechos reservados.</p>
                 <div class="flex gap-5 text-xs text-slate-400">
-                    <a href="#" class="hover:text-slate-600 transition-colors">Privacidad</a>
-                    <a href="#" class="hover:text-slate-600 transition-colors">Términos</a>
-                    <a href="#" class="hover:text-slate-600 transition-colors">Seguridad</a>
+                    <a href="#" class="hover:text-slate-600 transition-colors" data-i18n="footer.privacy">Privacidad</a>
+                    <a href="#" class="hover:text-slate-600 transition-colors" data-i18n="footer.terms">Términos</a>
+                    <a href="#" class="hover:text-slate-600 transition-colors" data-i18n="footer.security">Seguridad</a>
                 </div>
             </div>
         </div>
