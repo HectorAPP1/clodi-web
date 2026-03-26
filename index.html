@@ -179,6 +179,8 @@
                     data-i18n="nav.pricing">Normativa</a>
                 <a href="#lideres" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
                     data-i18n="nav.about">Nosotros</a>
+                <a href="#blog" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
+                    data-i18n="nav.blog">Blog</a>
             </div>
 
             <!-- Right actions -->
@@ -281,6 +283,17 @@
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span> <span data-i18n="menu.ia">✨ IA Asistida</span>
                 </a>
             </div>
+
+            <a href="#blog" onclick="closeMobileMenu()"
+                class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-slate-50 transition-colors group">
+                <span class="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-violet-500 text-base">article</span>
+                </span>
+                <div>
+                    <p class="text-sm font-semibold text-slate-800" data-i18n="nav.blog">Blog</p>
+                    <p class="text-xs text-slate-400" data-i18n="blog.badge">Recursos HSE</p>
+                </div>
+            </a>
 
             <div class="border-t border-slate-100 my-3"></div>
 
@@ -1283,6 +1296,119 @@
         </section>
 
         <!-- ════════════════════════════════════════════════════════════
+     BLOG
+     ════════════════════════════════════════════════════════════ -->
+        <section id="blog" class="py-24 px-6 lg:px-10 bg-slate-50">
+            <div class="max-w-7xl mx-auto">
+
+                <!-- Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+                    <div>
+                        <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-primary mb-4">
+                            <span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+                            <span data-i18n="blog.badge">Recursos HSE</span>
+                        </span>
+                        <h2 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                            <span data-i18n="blog.title">Normativas, guías</span><br />
+                            <span class="text-gradient" data-i18n="blog.highlight">y más.</span>
+                        </h2>
+                        <p class="mt-4 text-slate-500 max-w-lg leading-relaxed" data-i18n="blog.sub">
+                            Contenido actualizado sobre seguridad industrial, cambios normativos y mejores prácticas HSE para Chile y Latam.
+                        </p>
+                    </div>
+                    <a href="#"
+                        class="flex-shrink-0 inline-flex items-center gap-2 text-sm font-bold text-primary border border-primary/30 hover:border-primary hover:bg-primary/5 transition-all px-5 py-2.5 rounded-lg self-start md:self-auto">
+                        <span data-i18n="blog.cta">Ver todos los artículos</span>
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Cards grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- Card 1 — Normativa -->
+                    <article
+                        class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group flex flex-col">
+                        <div
+                            class="h-44 bg-gradient-to-br from-primary/10 via-primary/5 to-teal/10 relative overflow-hidden flex items-end p-5">
+                            <div
+                                class="absolute top-4 right-4 w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-3xl">gavel</span>
+                            </div>
+                            <span
+                                class="inline-block text-xs font-black uppercase tracking-widest bg-primary text-white px-2.5 py-1 rounded-full"
+                                data-i18n="blog.cat1">Normativa</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <p class="text-xs text-slate-400 font-medium mb-2" data-i18n="blog.date1">15 Mar 2026 · 5 min lectura</p>
+                            <h3 class="text-base font-black text-slate-900 leading-snug mb-3 group-hover:text-primary transition-colors"
+                                data-i18n="blog.t1">DS 44 actualizado: los cambios clave que debes implementar antes del 30 de junio</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed flex-1" data-i18n="blog.p1">El Ministerio del Trabajo publicó las nuevas exigencias para el reglamento de higiene y seguridad. Te explicamos qué cambia y cómo Clodi ya está adaptado.</p>
+                            <a href="#"
+                                class="mt-5 inline-flex items-center gap-1 text-xs font-bold text-primary hover:gap-2 transition-all">
+                                <span data-i18n="blog.read">Leer artículo</span>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 — Informe -->
+                    <article
+                        class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-teal-400/50 hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 group flex flex-col">
+                        <div
+                            class="h-44 bg-gradient-to-br from-teal-50 via-teal-50/60 to-primary/5 relative overflow-hidden flex items-end p-5">
+                            <div
+                                class="absolute top-4 right-4 w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-teal-500 text-3xl">bar_chart</span>
+                            </div>
+                            <span
+                                class="inline-block text-xs font-black uppercase tracking-widest bg-teal-500 text-white px-2.5 py-1 rounded-full"
+                                data-i18n="blog.cat2">Informe</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <p class="text-xs text-slate-400 font-medium mb-2" data-i18n="blog.date2">8 Mar 2026 · 8 min lectura</p>
+                            <h3 class="text-base font-black text-slate-900 leading-snug mb-3 group-hover:text-teal-600 transition-colors"
+                                data-i18n="blog.t2">Accidentabilidad en minería Q1 2026: análisis de los principales indicadores HSE</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed flex-1" data-i18n="blog.p2">Revisamos los datos de la Superintendencia de Seguridad Social y SERNAGEOMIN para el primer trimestre. Tasas de frecuencia, gravedad y los sectores más críticos.</p>
+                            <a href="#"
+                                class="mt-5 inline-flex items-center gap-1 text-xs font-bold text-teal-600 hover:gap-2 transition-all">
+                                <span data-i18n="blog.read">Leer artículo</span>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 — Guía -->
+                    <article
+                        class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-amber-400/50 hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 group flex flex-col">
+                        <div
+                            class="h-44 bg-gradient-to-br from-amber-50 via-amber-50/60 to-orange-50/40 relative overflow-hidden flex items-end p-5">
+                            <div
+                                class="absolute top-4 right-4 w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-amber-500 text-3xl">menu_book</span>
+                            </div>
+                            <span
+                                class="inline-block text-xs font-black uppercase tracking-widest bg-amber-400 text-white px-2.5 py-1 rounded-full"
+                                data-i18n="blog.cat3">Guía</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <p class="text-xs text-slate-400 font-medium mb-2" data-i18n="blog.date3">1 Mar 2026 · 6 min lectura</p>
+                            <h3 class="text-base font-black text-slate-900 leading-snug mb-3 group-hover:text-amber-600 transition-colors"
+                                data-i18n="blog.t3">Cómo digitalizar tu gestión HSE desde cero: guía paso a paso para empresas en Chile</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed flex-1" data-i18n="blog.p3">Desde la matriz IPER hasta los reportes de fiscalización: te mostramos el camino más directo para abandonar el Excel y operar con evidencia digital desde el día uno.</p>
+                            <a href="#"
+                                class="mt-5 inline-flex items-center gap-1 text-xs font-bold text-amber-600 hover:gap-2 transition-all">
+                                <span data-i18n="blog.read">Leer artículo</span>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
      CTA FINAL
      ════════════════════════════════════════════════════════════ -->
         <section id="lideres" class="cta-section relative py-32 px-6 lg:px-10 overflow-hidden">
@@ -1381,6 +1507,7 @@
                     <h4 class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-5" data-i18n="footer.col3">
                         Recursos</h4>
                     <ul class="space-y-3 text-sm text-slate-500" data-i18n-list="footer.l3">
+                        <li><a href="#blog" class="hover:text-primary transition-colors">Blog HSE</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors">Guías HSE</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors">Plantillas</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors">Soporte</a></li>

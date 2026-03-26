@@ -4,7 +4,7 @@ if (typeof lucide !== "undefined") lucide.createIcons();
 // ── Traducciones ──────────────────────────────────────────────
 const translations = {
     es: {
-        nav: { product: "Producto", solutions: "Soluciones", pricing: "Normativa", about: "Nosotros", login: "Iniciar sesión", cta: "Contacta ventas" },
+        nav: { product: "Producto", solutions: "Soluciones", pricing: "Normativa", about: "Nosotros", blog: "Blog", login: "Iniciar sesión", cta: "Contacta ventas" },
         hero: {
             badge: "Plataforma HSE activa",
             h1a: "Seguridad Industrial",
@@ -87,17 +87,32 @@ const translations = {
             sub: "Clodi nació en faena. Construida por ingenieros en prevención de riesgos que entienden lo que fiscaliza la DT. Simple, digital y lista para usar desde el día uno.",
             btn1: "Solicitar acceso", btn2: "Hablar con el equipo"
         },
+        blog: {
+            badge: "Recursos HSE",
+            title: "Normativas, guías", highlight: "y más.",
+            sub: "Contenido actualizado sobre seguridad industrial, cambios normativos y mejores prácticas HSE para Chile y Latam.",
+            cta: "Ver todos los artículos",
+            cat1: "Normativa", cat2: "Informe", cat3: "Guía",
+            date1: "15 Mar 2026 · 5 min lectura", date2: "8 Mar 2026 · 8 min lectura", date3: "1 Mar 2026 · 6 min lectura",
+            t1: "DS 44 actualizado: los cambios clave que debes implementar antes del 30 de junio",
+            t2: "Accidentabilidad en minería Q1 2026: análisis de los principales indicadores HSE",
+            t3: "Cómo digitalizar tu gestión HSE desde cero: guía paso a paso para empresas en Chile",
+            p1: "El Ministerio del Trabajo publicó las nuevas exigencias para el reglamento de higiene y seguridad. Te explicamos qué cambia y cómo Clodi ya está adaptado.",
+            p2: "Revisamos los datos de la Superintendencia de Seguridad Social y SERNAGEOMIN para el primer trimestre. Tasas de frecuencia, gravedad y los sectores más críticos.",
+            p3: "Desde la matriz IPER hasta los reportes de fiscalización: te mostramos el camino más directo para abandonar el Excel y operar con evidencia digital desde el día uno.",
+            read: "Leer artículo"
+        },
         footer: {
             desc: "Software y app de gestión de seguridad industrial (HSE) para la prevención de riesgos laborales en Chile y Latam.",
             col1: "Soluciones", l1: ["Matriz de Riesgos", "Control de EPP", "Auditorías", "Fiscalización Digital"],
             col2: "Empresa",    l2: ["Acerca de Clodi", "Precios", "Podcast", "Contacto"],
-            col3: "Recursos",   l3: ["Guías HSE", "Plantillas", "Soporte", "Estado del servicio"],
+            col3: "Recursos",   l3: ["Blog HSE", "Guías HSE", "Plantillas", "Soporte", "Estado del servicio"],
             copy: "© 2026 Clodi Inc. Todos los derechos reservados.",
             privacy: "Privacidad", terms: "Términos", security: "Seguridad"
         }
     },
     en: {
-        nav: { product: "Product", solutions: "Solutions", pricing: "Compliance", about: "About", login: "Sign In", cta: "Contact Sales" },
+        nav: { product: "Product", solutions: "Solutions", pricing: "Compliance", about: "About", blog: "Blog", login: "Sign In", cta: "Contact Sales" },
         hero: {
             badge: "HSE Platform Active",
             h1a: "Industrial Safety",
@@ -180,11 +195,26 @@ const translations = {
             sub: "Clodi was born on the job site. Built by safety engineers who know what inspectors look for. Simple, digital, and ready from day one.",
             btn1: "Request Access", btn2: "Talk to the Team"
         },
+        blog: {
+            badge: "HSE Resources",
+            title: "Regulations, guides", highlight: "and more.",
+            sub: "Updated content on industrial safety, regulatory changes, and HSE best practices for Chile and Latam.",
+            cta: "See all articles",
+            cat1: "Regulation", cat2: "Report", cat3: "Guide",
+            date1: "Mar 15, 2026 · 5 min read", date2: "Mar 8, 2026 · 8 min read", date3: "Mar 1, 2026 · 6 min read",
+            t1: "DS 44 updated: key changes you must implement before June 30",
+            t2: "Mining HSE Q1 2026: main indicators and sector analysis",
+            t3: "How to digitize your HSE management from scratch: step-by-step guide for companies in Chile",
+            p1: "The Ministry of Labor published new requirements for health and safety regulations. We explain what changes and how Clodi is already adapted.",
+            p2: "We reviewed data from the Social Security Superintendence and SERNAGEOMIN for Q1. Frequency rates, severity rates, and the most critical sectors.",
+            p3: "From the IPER matrix to inspection reports: we show you the most direct path to leave Excel behind and operate with digital evidence from day one.",
+            read: "Read article"
+        },
         footer: {
             desc: "Industrial safety management software and app (HSE) for occupational risk prevention across Chile and Latam.",
             col1: "Solutions", l1: ["Risk Matrix", "PPE Control", "Audits", "Digital Inspection"],
             col2: "Company",   l2: ["About Clodi", "Pricing", "Podcast", "Contact"],
-            col3: "Resources", l3: ["HSE Guides", "Templates", "Support", "Service Status"],
+            col3: "Resources", l3: ["HSE Blog", "HSE Guides", "Templates", "Support", "Service Status"],
             copy: "© 2026 Clodi Inc. All rights reserved.",
             privacy: "Privacy", terms: "Terms", security: "Security"
         }
