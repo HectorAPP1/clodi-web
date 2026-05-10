@@ -61,7 +61,7 @@ cd Landing-Clodi
 
 ## Normativa cubierta
 
-- **DS 44** — Reglamento de seguridad minera
+- **DS 44** — Nuevo decreto de sobre la gestion preventiva que promueve entornos de trabajos seguros y saludables.
 - **DS 594** — Higiene industrial / agentes físicos, químicos y biológicos
 - **Ley 16.744** — Accidentes del trabajo y enfermedades profesionales
 - **ISO 45001** — Estándar base de gestión SST
